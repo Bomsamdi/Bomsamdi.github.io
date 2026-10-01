@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bartosz Wróbel IT</title>
+  <!--
+  Developer card for Google Sites (Insert → Embed → Embed code).
+  Self-contained: inline CSS, no scripts. Images load from the GitHub Pages site.
+  Links open in a new tab because Google Sites renders embeds in a sandboxed iframe.
+-->
+  <style>
+    :root {
+      --bg: #12131A;
+      --surface: #1B1D29;
+      --line: #2A2D3D;
+      --text: #F4F5FA;
+      --muted: #9AA0B8;
+      --accent: #4DA3FF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 16px 32px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .me {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .avatar {
+      flex: none;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #4DA3FF, #7B5CFF);
+      color: #08121f;
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    .role {
+      margin: 2px 0 0;
+      color: var(--muted);
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .facts li {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+
+    .facts b {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .facts span,
+    .facts a {
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .app {
+      display: flex;
+      gap: 16px;
+      background: var(--surface);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .app img {
+      flex: none;
+      width: 84px;
+      height: 84px;
+      border-radius: 20px;
+    }
+
+    .app h3 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .app p {
+      margin: 4px 0 0;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .links {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      font-size: 14px;
+    }
+
+    .about {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 420px) {
+      .app {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="me">
+      <div class="avatar" aria-hidden="true">BW</div>
+      <div>
+        <h1>Bartosz Wróbel</h1>
+        <p class="role">Independent mobile developer · Poland</p>
+      </div>
+    </header>
+
+    <ul class="facts">
+      <li><b>Contact</b><a href="mailto:bartoszwrobelit@gmail.com" target="_blank"
+          rel="noopener">bartoszwrobelit@gmail.com</a></li>
+      <li><b>Location</b><span>Poland</span></li>
+      <li><b>Platforms</b><span>Android · iOS</span></li>
+      <li><b>Code</b><a href="https://github.com/Bomsamdi" target="_blank" rel="noopener">github.com/Bomsamdi</a></li>
+    </ul>
+
+    <h2>Apps</h2>
+    <article class="app">
+      <p>Coming soon…</p>
+    </article>
+
+    <h2>About</h2>
+    <p class="about">I design and build mobile games on my own, from game rules to release, with Flutter for Android and
+      iOS. My games are free to play, supported by ads and optional in-app purchases. For support, privacy requests or
+      business enquiries, e-mail me at the address above.</p>
+
+    <footer>© 2026 Bartosz Wróbel. All rights reserved.</footer>
+  </div>
+</body>
+
+</html>
